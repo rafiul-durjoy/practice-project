@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url('bg.jpg') no-repeat center center/cover;
+}
+
+/* Container */
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 120px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Top Right Menu */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.profile {
+  background: orange;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Center */
+.center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box input {
+  width: 500px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Shortcuts */
+.shortcuts {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.item:hover {
+  background: rgba(255,255,255,0.4);
+}
